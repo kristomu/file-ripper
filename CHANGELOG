@@ -1,0 +1,26 @@
+1.0.2 (2007-05-31):
+	Bug fixes:
+		* Fixed getopt problem where using -m with certain values
+			would cause a segmentation fault.
+	
+	Improvements:
+		* Replaced Rabin-Karp class with newer one from TNG for a
+			small (~20%) speed improvement.
+		* Added 64-bit compilation parameters to the Makefile,
+			moving the maximum file size up to unsigned 32 bit
+			instead of signed 32 bit on 32-bit architectures.
+	
+	New features:
+		* Added rudimentary support for TIF files.
+		* Added estimated time to completion and MB/s statistics to
+			the console output.
+
+1.0.1 (2007-03-27):
+	Bug fixes:
+		* Fixed qualification error at rippers.cc:423 so that it 
+			compiles on newer versions of g++.
+	
+	New features:
+		* Added support for Corel Draw .CDR files.
+
+1.0: Initial release
