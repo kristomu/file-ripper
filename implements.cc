@@ -444,7 +444,7 @@ class compressed_bas_ripper : public wildcard_ripper {
 };
 
 compressed_bas_ripper::compressed_bas_ripper() {
-	char hdr[17] = {0xFC, 0, 1, 0, 0x0C, 0, 0x81, 1, 0x82, 1, 6, 0,
+	unsigned char hdr[17] = {0xFC, 0, 1, 0, 0x0C, 0, 0x81, 1, 0x82, 1, 6, 0,
 		1, 2, 3, 4};
 
 	string hdr_string;

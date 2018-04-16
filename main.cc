@@ -112,7 +112,7 @@ namespace Sgi = ::__gnu_cxx;       // GCC 3.1 and later
 using namespace std;
 
 
-void fail(char* s) { 
+void fail(const char* s) { 
   fprintf(stderr, "%s errno = %d, ", s, errno); 
   perror(NULL);
   fprintf(stderr, "\n");

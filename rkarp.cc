@@ -18,9 +18,8 @@ using namespace std;
 #define USE_HASH_MAP
 
 #ifdef USE_HASH_MAP
- #include <ext/hash_map>
- namespace SGI = ::__gnu_cxx;
- #define lookup_map SGI::hash_map
+ #include <unordered_map>
+ #define lookup_map unordered_map
 #endif
 #ifndef USE_HASH_MAP
  #define lookup_map map
